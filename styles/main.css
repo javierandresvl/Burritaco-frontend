@@ -1,0 +1,39 @@
+body {
+  font-family: "Arial";
+}
+
+p {
+  color: #000033;
+  padding: 20px;
+  }
+
+.shadow {
+  display: flex;
+  transform: rotate(30deg);
+  box-shadow: 1px 1px 5px #444; }
+
+.logo {
+  max-width: 150px;
+  float: left;
+  transition: 1000ms ease; }
+  .logo:hover {
+    transform: rotate(360deg); }
+
+button {
+  color: black; }
+
+input {
+  color: black; }
+
+h1 {
+  color: #3cff;
+  margin: 60px;
+   }
+
+nav {
+  color: #33ccff
+}
+
+
+.navbar {
+  padding-right: 25px; }

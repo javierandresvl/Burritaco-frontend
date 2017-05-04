@@ -1,0 +1,27 @@
+{
+  "name": "burritaco-frontend",
+  "version": "1.0.0",
+  "description": "Aplicación web de percepción ciudadana de la congestión de tránsito en la región Metropolitana",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss ./styles/main.scss   ./styles/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "dev": "concurrently --kill-others 'npm run watch-css' 'autoreload-server ./ 8090'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pastordrogo/burritaco-frontend"
+  },
+  "author": "futuchile",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pastordrogo/burritaco-frontend/issues"
+  },
+  "homepage": "https://github.com/pastordrogo/burritaco-frontend#readme",
+  "devDependencies": {
+    "concurrently": "^3.0.0",
+    "node-sass": "^3.10.0",
+    "nodemon": "^1.10.2",
+    "simple-autoreload-server": "^0.1.7"
+  }
+}
