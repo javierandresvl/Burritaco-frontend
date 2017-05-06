@@ -1,11 +1,7 @@
 body {
-  font-family: "Arial";
-}
-
-p {
-  color: #000033;
+  color: #000;
   padding: 20px;
-  }
+  background: #c0deed; }
 
 .shadow {
   display: flex;
@@ -13,9 +9,11 @@ p {
   box-shadow: 1px 1px 5px #444; }
 
 .logo {
-  max-width: 150px;
+  max-width:  80px;
   float: left;
-  transition: 1000ms ease; }
+  height: 60px; width:60px;
+
+  transition: 1500ms ease; }
   .logo:hover {
     transform: rotate(360deg); }
 
@@ -26,14 +24,37 @@ input {
   color: black; }
 
 h1 {
-  color: #3cff;
-  margin: 60px;
-   }
+  margin: 60px; }
 
-nav {
-  color: #33ccff
+.navbar {
+  height: 80px;
+  background-color: white;
+  border-style: none;
+  opacity: 10;
+}
+
+.anavbarlink{
+  height:80px;width:100px;
 }
 
 
-.navbar {
-  padding-right: 25px; }
+.navbarlink{
+  color: grey;
+  background-color: white;
+  text-align: center;
+  width: 100px;
+  height: 80px  ;
+}
+
+.navbarlink:hover{
+  color: black;
+  background-color: #1dcaff;
+  text-align: center;
+  width: 100px;
+  height: 80px;
+}
+
+.anavbarlink:visited{
+  color: black;
+  background-color: #1dcaff;
+}
