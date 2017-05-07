@@ -1,7 +1,7 @@
 body {
-  color: #000;
+  color: #fff;
   padding: 20px;
-  background: #c0deed; }
+  background: #444; }
 
 .shadow {
   display: flex;
@@ -9,11 +9,9 @@ body {
   box-shadow: 1px 1px 5px #444; }
 
 .logo {
-  max-width:  80px;
+  max-width: 150px;
   float: left;
-  height: 60px; width:60px;
-
-  transition: 1500ms ease; }
+  transition: 1000ms ease; }
   .logo:hover {
     transform: rotate(360deg); }
 
@@ -27,34 +25,4 @@ h1 {
   margin: 60px; }
 
 .navbar {
-  height: 80px;
-  background-color: white;
-  border-style: none;
-  opacity: 10;
-}
-
-.anavbarlink{
-  height:80px;width:100px;
-}
-
-
-.navbarlink{
-  color: grey;
-  background-color: white;
-  text-align: center;
-  width: 100px;
-  height: 80px  ;
-}
-
-.navbarlink:hover{
-  color: black;
-  background-color: #1dcaff;
-  text-align: center;
-  width: 100px;
-  height: 80px;
-}
-
-.anavbarlink:visited{
-  color: black;
-  background-color: #1dcaff;
-}
+  padding-right: 25px; }

@@ -4,20 +4,20 @@
         <meta charset="utf-8">
         <title>Burritaco</title>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="./styles/main.css">
+        <link rel="stylesheet" type="text/css" href="./styles/burritacostyle.css">
     </head>
     <body ng-app="burritaco">
-      <nav class="navbar navbar-inverse">
+      <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#/home">
-                  <img class="logo" src="resources/img/burritaco.png" alt="logo">
+            <a  href="#/home">
+              <img class="logo" src="resources/img/burritaco.png" alt="logo">
             </a>
           </div>
           <ul class="nav navbar-nav">
-            <li class="navbarlink"><a class="anavbarlink" href="#/home">Inicio</a></li>
-            <li class="dropdown navbarlink">
-              <a class="dropdown-toggle" data-toggle="dropdown" style="height:90px;width:100px" href="#">Congestión
+            <li><a href="#/home">Inicio</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Congestión
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
@@ -27,8 +27,8 @@
                 <li><a href="#/tweets">Tweets relacionados</a></li>
               </ul>
             </li>
-            <li class="navbarlink"><a class="anavbarlink" href="#/about">Acerca de</a></li>
-            <li class="navbarlink"><a class="anavbarlink" href="#/us">Nosotros</a></li>
+            <li><a href="#/about">Acerca de</a></li>
+            <li><a href="#/us">Nosotros</a></li>
             </ul>
           </div>
         </nav>

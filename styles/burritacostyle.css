@@ -1,0 +1,33 @@
+body {
+  color: black;
+  padding: 0px;
+  background: white; }
+
+.shadow {
+  display: flex;
+  transform: rotate(30deg);
+  box-shadow: 1px 1px 5px #444; }
+
+.logo {
+  max-width: 150px;
+  float: left;
+  transition: 1000ms ease; }
+  .logo:hover {
+    transform: rotate(360deg); }
+
+button {
+  color: black; }
+
+input {
+  color: black; }
+
+h1 {
+  margin: 60px; }
+
+.navbar {
+  padding-right: 25px; }
+
+.team-thumbnail{
+  height: 369px;
+  width: 247px;
+}
