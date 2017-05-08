@@ -1,3 +1,3 @@
-app.controller('UsCtrl',function($scope){
+app.controller('GraphicCtrl',function($scope){
 
 });
