@@ -20,6 +20,18 @@ app.config(function($routeProvider){
       templateUrl: 'views/graphic.html',
       controller: 'GraphicCtrl'
     })
+    .when('/graph',{
+      templateUrl: 'views/graph.html',
+      controller: 'GraphCtrl'
+    })
+    .when('/map',{
+      templateUrl: 'views/map.html',
+      controller: 'MapCtrl'
+    })
+    .when('/tweets',{
+      templateUrl: 'views/tweets.html',
+      controller: 'TweetsCtrl'
+    })
     .otherwise({
         redirectTo: '/home'
       });
