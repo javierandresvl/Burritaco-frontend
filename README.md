@@ -14,6 +14,6 @@ Futuchile está integrado por:
 
 
 Instrucciones:
-     1. clonar repositorio
-     1. descargar librerías con npm install
-     1. ejecutar servidor con npm run dev
+1. clonar repositorio
+2. descargar librerías con npm install
+3. ejecutar servidor con npm run dev
