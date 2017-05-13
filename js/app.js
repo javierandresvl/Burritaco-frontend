@@ -1,5 +1,5 @@
 var app = angular.module('burritaco', [
-    'ngRoute'
+    'ngRoute', 'chart.js'
     ]);
 
 app.config(function($routeProvider){
