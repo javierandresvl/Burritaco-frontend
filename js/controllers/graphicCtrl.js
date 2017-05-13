@@ -1,5 +1,6 @@
 app.controller('GraphicCtrl',function($scope, getCommunesService){
   $scope.communes = [];
+  
   function getCommunes(){
     getCommunesService.getCommunes()
     .success(function(data){
@@ -9,5 +10,7 @@ app.controller('GraphicCtrl',function($scope, getCommunesService){
       $scope.status = 'Error al consultar por comunas';
     });
   }
+
   getCommunes();
+
 });
