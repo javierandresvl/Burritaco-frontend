@@ -1,11 +1,29 @@
-<div class="row">
-  <h2>Gráfico de relación temporal con los reportes de congestión de los usuarios</h2>
-  <div class="col-md-2"></div>
-  <div class="col-md-8"><p>
-    Aca va el gráfico, por mientras una imágen
-    <img class="img-responsive" src="resources/img/congestionSantiago.png" alt="grafico"></img>
-  </p></div>
-  <div class="col-md-2"></div>
+  <div class="row">
+    <h2 class="burritaco-description">Relación temporal de reportes por comuna</h2>
+    <h4 class="burritaco-description">Este gráfico muestra la relación existente
+    entre la cantidad de reportes
+    de congestión en una comuna de la Región Metropolitana y el transcurso de las horas del día</h4>
+
+
+    <div class="col-md-12">
+      <p class="burritaco-description">
+        Seleccione una comuna de la Región Metropolitana
+      </p>
+      <hr style="border-color:#1dcaff;">
+      <!--ACA ESTA EL DROPBOX SELECT DE LAS COMUNAS-->
+      <select class="form-control" ng-model="selectedCommune" ng-options="item.communeName for item in communes"
+      autofocus="autofocus" title="Seleccionar comuna" ></select>
+      <!--
+      La comuna elegida está en $scope.selectedCommune con el formato del objeto
+      $scope.selectedCommune = {{'communeId':id};{'communeName':'nombrecomuna'}}
+      -->
+      <hr style="border-color:#1dcaff;">
+
+      <!--ACA EN ESTE div container-fluid DEBE IR LA VISUALIZACION DEL GRAFICOS-->
+      <div class="container-fluid">
+        
+      </div>
+    </div>
 
 
 </div>
