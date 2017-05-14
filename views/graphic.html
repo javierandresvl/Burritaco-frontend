@@ -14,7 +14,7 @@
       <hr style="border-color:#1dcaff;">
       <!--ACA ESTA EL DROPBOX SELECT DE LAS COMUNAS-->
       <select class="form-control" ng-model="selectedCommune" ng-options="item.communeName for item in communes"
-      autofocus="autofocus" title="Seleccionar comuna" ></select>
+      autofocus="autofocus" title="Seleccionar comuna" ng-dirty="showCommuneId()"></select>
       <!--
       La comuna elegida está en $scope.selectedCommune con el formato del objeto
       $scope.selectedCommune = {{'communeId':id};{'communeName':'nombrecomuna'}}
@@ -25,7 +25,7 @@
       <div class="container-fluid">
         <h4 class="burritaco-description">Reportes vs hora del día en {{selectedCommune.communeName}}</h4>
         <canvas id="line" class="chart chart-line"
-          chart-data="data"
+          chart-data="dataGraph"
           chart-labels="labels" chart-options="options">
         </canvas
 

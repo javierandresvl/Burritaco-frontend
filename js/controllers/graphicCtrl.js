@@ -1,6 +1,7 @@
 app.controller('GraphicCtrl',function($scope, getCommunesService){
   $scope.communes = [];
-  $scope.data = [];
+  $scope.dataGraph = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+  
   function getCommunes(){
     getCommunesService.getCommunes()
     .success(function(data){
@@ -10,30 +11,22 @@ app.controller('GraphicCtrl',function($scope, getCommunesService){
       $scope.status = 'Error al consultar por comunas';
     });
   }
-
-  //Esta función recupera la info para el dropbox de comunas, ejecutando el servicio
-  //correspondiente
-  getCommunes();
-
-  function getCongestionCommune(id){
-    getDataCongestionCommuneService.getData(id)
+  
+  function getDataCongestionCommune(id){
+    getCommunesService.getCongestionData(id)
     .success(function(data){
-      $scope.data=data;
+      $scope.dataGraph=data;
     })
     .error(function(error){
-      $scope.status = 'Error al obtener los datos del gráfico para la comuna ' + selectedCommune.communeName;
+      $scope.status = 'Error al obtener los datos del gráfico para la comuna ' + $scope.selectedCommune.communeName;
     });
   }
-  //Este debería ser el llamado a la comuna pasar id de selectedCommune
-  //getCongestionCommune(pasar id);
 
-  // Este es el elemento que debe recibir el json de la peticion get de commune
-  /*
-  $scope.data = [
-    [2, 4, 0, 3, 15, 31, 30, 120, 333, 1200, 750, 847,
-    231, 123, 456, 189, 481, 1450, 915, 450, 300, 423, 120, 54, 13]
-  ];
-  */
+  $scope.$watch("selectedCommune", function(){
+      console.log($scope.selectedCommune.communeId);
+      getDataCongestionCommune($scope.selectedCommune.communeId);
+  }, true);
+  
   $scope.labels = ["00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00",
                   "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00",
                   "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00",
@@ -57,5 +50,8 @@ app.controller('GraphicCtrl',function($scope, getCommunesService){
     }
   };
 
+  //Esta función recupera la info para el dropbox de comunas, ejecutando el servicio
+  //correspondiente
+  getCommunes();
 
 });
