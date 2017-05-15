@@ -10,18 +10,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pastordrogo/burritaco-frontend"
+    "url": "git+https://github.com/mamgui/burritaco-frontend"
   },
-  "author": "futuchile",
+  "author": "Futuchile",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pastordrogo/burritaco-frontend/issues"
+    "url": "https://github.com/Mamgui/burritaco-frontend/issues"
   },
-  "homepage": "https://github.com/pastordrogo/burritaco-frontend#readme",
+  "homepage": "https://github.com/Mamgui/burritaco-frontend#readme",
   "devDependencies": {
     "concurrently": "^3.0.0",
     "node-sass": "^3.10.0",
     "nodemon": "^1.10.2",
     "simple-autoreload-server": "^0.1.7"
+  },
+  "dependencies": {
+    "angular-chart.js": "^1.1.1"
   }
 }
