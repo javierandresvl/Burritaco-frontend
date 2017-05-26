@@ -7,6 +7,12 @@ body {
   min-height: 530px;
 }
 
+#mapid
+{
+  width: 100%;
+  height: 600px;
+}
+
 .shadow {
   display: flex;
   transform: rotate(30deg);
@@ -29,6 +35,10 @@ input {
 
 h1 {
   margin: 60px; }
+
+.hr-burritaco{
+    border-color:#1dcaff;
+}
 
 .navbar-default-burritaco {
   height: 100px;
