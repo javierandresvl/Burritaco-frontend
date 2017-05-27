@@ -23,14 +23,11 @@
 
       <!--ACA EN ESTE div container-fluid DEBE IR LA VISUALIZACION DEL GRAFICOS-->
       <div class="container-fluid">
-        <h4 class="burritaco-description">Reportes vs hora del día en {{selectedCommune.communeName}}</h4>
         <canvas id="line" class="chart chart-line"
           chart-data="dataGraph"
           chart-labels="labels" chart-options="options">
-        </canvas
-
+        </canvas>
+        <p class="fecha-datos" ng-bind="recopilation"></p>
       </div>
     </div>
-
-
 </div>

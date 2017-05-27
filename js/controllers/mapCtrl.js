@@ -1,6 +1,8 @@
 app.controller('MapCtrl', function($scope, getCommunesService){
   $scope.mapData = [];
   $scope.map = [];
+  $scope.fechaInicio=null;
+  $scope.fechaFinal=null;
   initMap();
   displayDataMap();
 
@@ -47,6 +49,15 @@ app.controller('MapCtrl', function($scope, getCommunesService){
     getCommunesService.getChoroplethData()
     .success(function(data){
       $scope.mapData = data;
+      $scope.fechaInicio=data["fecha inicial"];
+      $scope.fechaFinal=data["fecha termino"];
+      $scope.recopilation="Datos correspondientes al período entre: "+$scope.fechaInicio+" hasta "+$scope.fechaFinal;
+      var hue=120;
+      var stringColor = null;
+      var idCom = null;
+      var estilo = {
+        fillOpacity: 0.5
+      };
       L.geoJSON(comunas, {
         style: function(feature) {
           /*
@@ -54,10 +65,10 @@ app.controller('MapCtrl', function($scope, getCommunesService){
             Verde inicial: hue:120 saturation:100% lightness:50%
             Rojo final: hue:0 saturation:100% lightness:50%
           */
-          var hue=120;
-          var stringColor = null;
-          var idCom = null;
-          var estilo = {
+          hue =120;
+          stringColor=null;
+          idCom = null;
+          estilo = {
             fillOpacity: 0.5
           };
           if (feature.properties && feature.properties.NOM_COM && feature.properties.NOM_PROV){

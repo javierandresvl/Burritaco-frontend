@@ -6,6 +6,10 @@ body {
   min-width: 425px;
   min-height: 530px;
 }
+.fecha-datos{
+  color:grey;
+  opacity: 50%;
+}
 
 #mapid
 {
