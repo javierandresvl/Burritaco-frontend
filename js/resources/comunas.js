@@ -6384,7 +6384,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 44,
+        "COD_COMUNA": 45,
         "DIS_ELEC": 31,
         "NOM_COM": "María Pinto",
         "NOM_PROV": "Melipilla",
@@ -15121,7 +15121,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 47,
+        "COD_COMUNA": 48,
         "DIS_ELEC": 31,
         "NOM_COM": "San Pedro",
         "NOM_PROV": "Melipilla",
@@ -15542,7 +15542,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 2,
+        "COD_COMUNA": 3,
         "DIS_ELEC": 19,
         "NOM_COM": "Independencia",
         "NOM_PROV": "Santiago",
@@ -18303,7 +18303,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 14,
+        "COD_COMUNA": 15,
         "DIS_ELEC": 26,
         "NOM_COM": "La Florida",
         "NOM_PROV": "Santiago",
@@ -26684,7 +26684,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 8,
+        "COD_COMUNA": 9,
         "DIS_ELEC": 23,
         "NOM_COM": "Lo Barnechea",
         "NOM_PROV": "Santiago",
@@ -26921,7 +26921,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 23,
+        "COD_COMUNA": 24,
         "DIS_ELEC": 28,
         "NOM_COM": "Lo Espejo",
         "NOM_PROV": "Santiago",
@@ -27386,7 +27386,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 28,
+        "COD_COMUNA": 29,
         "DIS_ELEC": 18,
         "NOM_COM": "Lo Prado",
         "NOM_PROV": "Santiago",
@@ -27715,7 +27715,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 22,
+        "COD_COMUNA": 23,
         "DIS_ELEC": 28,
         "NOM_COM": "Pedro Aguirre Cerda",
         "NOM_PROV": "Santiago",
@@ -30932,7 +30932,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 29,
+        "COD_COMUNA": 30,
         "DIS_ELEC": 16,
         "NOM_COM": "Pudahuel",
         "NOM_PROV": "Santiago",
@@ -31585,7 +31585,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 15,
+        "COD_COMUNA": 16,
         "DIS_ELEC": 25,
         "NOM_COM": "San Joaquín",
         "NOM_PROV": "Santiago",
@@ -32022,7 +32022,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 18,
+        "COD_COMUNA": 19,
         "DIS_ELEC": 27,
         "NOM_COM": "San Ramón",
         "NOM_PROV": "Santiago",
@@ -35467,7 +35467,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 51,
+        "COD_COMUNA": 52,
         "DIS_ELEC": 31,
         "NOM_COM": "El Monte",
         "NOM_PROV": "Talagante",
@@ -40100,7 +40100,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 50,
+        "COD_COMUNA": 51,
         "DIS_ELEC": 31,
         "NOM_COM": "Isla de Maipo",
         "NOM_PROV": "Talagante",
@@ -43301,7 +43301,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 48,
+        "COD_COMUNA": 49,
         "DIS_ELEC": 31,
         "NOM_COM": "Talagante",
         "NOM_PROV": "Talagante",
@@ -53158,7 +53158,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 33,
+        "COD_COMUNA": 34,
         "DIS_ELEC": 16,
         "NOM_COM": "Colina",
         "NOM_PROV": "Chacabuco",
@@ -57563,7 +57563,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 34,
+        "COD_COMUNA": 35,
         "DIS_ELEC": 16,
         "NOM_COM": "Lampa",
         "NOM_PROV": "Chacabuco",
@@ -65872,7 +65872,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 35,
+        "COD_COMUNA": 36,
         "DIS_ELEC": 16,
         "NOM_COM": "Tiltil",
         "NOM_PROV": "Chacabuco",
@@ -73289,7 +73289,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 38,
+        "COD_COMUNA": 39,
         "DIS_ELEC": 29,
         "NOM_COM": "Pirque",
         "NOM_PROV": "Cordillera",
@@ -76154,7 +76154,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 36,
+        "COD_COMUNA": 37,
         "DIS_ELEC": 29,
         "NOM_COM": "Puente Alto",
         "NOM_PROV": "Cordillera",
@@ -100843,7 +100843,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 37,
+        "COD_COMUNA": 38,
         "DIS_ELEC": 29,
         "NOM_COM": "San José de Maipo",
         "NOM_PROV": "Cordillera",
@@ -105120,7 +105120,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 40,
+        "COD_COMUNA": 41,
         "DIS_ELEC": 30,
         "NOM_COM": "Buin",
         "NOM_PROV": "Maipo",
@@ -117009,7 +117009,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 41,
+        "COD_COMUNA": 42,
         "DIS_ELEC": 30,
         "NOM_COM": "Paine",
         "NOM_PROV": "Maipo",
@@ -120806,7 +120806,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 39,
+        "COD_COMUNA": 40,
         "DIS_ELEC": 30,
         "NOM_COM": "San Bernardo",
         "NOM_PROV": "Maipo",
@@ -137539,7 +137539,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 46,
+        "COD_COMUNA": 47,
         "DIS_ELEC": 31,
         "NOM_COM": "Alhué",
         "NOM_PROV": "Melipilla",
@@ -148264,7 +148264,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 45,
+        "COD_COMUNA": 46,
         "DIS_ELEC": 31,
         "NOM_COM": "Curacaví",
         "NOM_PROV": "Melipilla",
@@ -149969,7 +149969,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 42,
+        "COD_COMUNA": 43,
         "DIS_ELEC": 30,
         "NOM_COM": "Calera de Tango",
         "NOM_PROV": "Maipo",
@@ -167494,7 +167494,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 43,
+        "COD_COMUNA": 44,
         "DIS_ELEC": 31,
         "NOM_COM": "Melipilla",
         "NOM_PROV": "Melipilla",
@@ -168039,7 +168039,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 25,
+        "COD_COMUNA": 26,
         "DIS_ELEC": 20,
         "NOM_COM": "Cerrillos",
         "NOM_PROV": "Santiago",
@@ -169096,7 +169096,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 30,
+        "COD_COMUNA": 31,
         "DIS_ELEC": 18,
         "NOM_COM": "Cerro Navia",
         "NOM_PROV": "Santiago",
@@ -169865,7 +169865,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 3,
+        "COD_COMUNA": 4,
         "DIS_ELEC": 17,
         "NOM_COM": "Conchalí",
         "NOM_PROV": "Santiago",
@@ -170542,7 +170542,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 21,
+        "COD_COMUNA": 22,
         "DIS_ELEC": 27,
         "NOM_COM": "El Bosque",
         "NOM_PROV": "Santiago",
@@ -172395,7 +172395,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 13,
+        "COD_COMUNA": 14,
         "DIS_ELEC": 24,
         "NOM_COM": "Peñalolén",
         "NOM_PROV": "Santiago",
@@ -173312,7 +173312,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 6,
+        "COD_COMUNA": 7,
         "DIS_ELEC": 21,
         "NOM_COM": "Providencia",
         "NOM_PROV": "Santiago",
@@ -174685,7 +174685,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 32,
+        "COD_COMUNA": 33,
         "DIS_ELEC": 16,
         "NOM_COM": "Quilicura",
         "NOM_PROV": "Santiago",
@@ -175642,7 +175642,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 7,
+        "COD_COMUNA": 8,
         "DIS_ELEC": 23,
         "NOM_COM": "Vitacura",
         "NOM_PROV": "Santiago",
@@ -177815,7 +177815,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 52,
+        "COD_COMUNA": 53,
         "DIS_ELEC": 31,
         "NOM_COM": "Padre Hurtado",
         "NOM_PROV": "Talagante",
@@ -178596,7 +178596,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 27,
+        "COD_COMUNA": 28,
         "DIS_ELEC": 18,
         "NOM_COM": "Quinta Normal",
         "NOM_PROV": "Santiago",
@@ -179381,7 +179381,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 5,
+        "COD_COMUNA": 6,
         "DIS_ELEC": 19,
         "NOM_COM": "Recoleta",
         "NOM_PROV": "Santiago",
@@ -180522,7 +180522,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 31,
+        "COD_COMUNA": 32,
         "DIS_ELEC": 17,
         "NOM_COM": "Renca",
         "NOM_PROV": "Santiago",
@@ -180903,7 +180903,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 19,
+        "COD_COMUNA": 20,
         "DIS_ELEC": 28,
         "NOM_COM": "San Miguel",
         "NOM_PROV": "Santiago",
@@ -183225,7 +183225,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 4,
+        "COD_COMUNA": 5,
         "DIS_ELEC": 17,
         "NOM_COM": "Huechuraba",
         "NOM_PROV": "Santiago",
@@ -183646,7 +183646,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 20,
+        "COD_COMUNA": 21,
         "DIS_ELEC": 27,
         "NOM_COM": "La Cisterna",
         "NOM_PROV": "Santiago",
@@ -184163,7 +184163,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 16,
+        "COD_COMUNA": 17,
         "DIS_ELEC": 25,
         "NOM_COM": "La Granja",
         "NOM_PROV": "Santiago",
@@ -184868,7 +184868,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 17,
+        "COD_COMUNA": 18,
         "DIS_ELEC": 29,
         "NOM_COM": "La Pintana",
         "NOM_PROV": "Santiago",
@@ -186041,7 +186041,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 11,
+        "COD_COMUNA": 12,
         "DIS_ELEC": 24,
         "NOM_COM": "La Reina",
         "NOM_PROV": "Santiago",
@@ -188250,7 +188250,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 9,
+        "COD_COMUNA": 10,
         "DIS_ELEC": 23,
         "NOM_COM": "Las Condes",
         "NOM_PROV": "Santiago",
@@ -188835,7 +188835,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 12,
+        "COD_COMUNA": 13,
         "DIS_ELEC": 25,
         "NOM_COM": "Macul",
         "NOM_PROV": "Santiago",
@@ -191212,7 +191212,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 26,
+        "COD_COMUNA": 27,
         "DIS_ELEC": 20,
         "NOM_COM": "Maipú",
         "NOM_PROV": "Santiago",
@@ -192273,7 +192273,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 8,
-        "COD_COMUNA": 10,
+        "COD_COMUNA": 11,
         "DIS_ELEC": 21,
         "NOM_COM": "Ñuñoa",
         "NOM_PROV": "Santiago",
@@ -193698,7 +193698,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 49,
+        "COD_COMUNA": 50,
         "DIS_ELEC": 31,
         "NOM_COM": "Peñaflor",
         "NOM_PROV": "Talagante",
@@ -194359,7 +194359,7 @@ var comunas =
       },
       "properties": {
         "CIR_SENA": 7,
-        "COD_COMUNA": 24,
+        "COD_COMUNA": 25,
         "DIS_ELEC": 20,
         "NOM_COM": "Estación Central",
         "NOM_PROV": "Santiago",

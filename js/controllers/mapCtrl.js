@@ -109,7 +109,7 @@ app.controller('MapCtrl', function($scope, getCommunesService){
     mapboxgl.accessToken = accesstoken;
     L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token={access_token}',
     {
-      attribution: '© Mapbox | @ Futuchi | '+$scope.recopilation,
+      attribution: '© Mapbox | @ Futuchi ',
       access_token:accesstoken,
       minZoom: 9,
     }).addTo($scope.map);
@@ -174,7 +174,6 @@ app.controller('MapCtrl', function($scope, getCommunesService){
           }
           switch (feature.properties.COD_COMUNA) {
             case 1:   return estilo;
-            case 2:   return estilo;
             case 3:   return estilo;
             case 4:   return estilo;
             case 5:   return estilo;
@@ -225,6 +224,7 @@ app.controller('MapCtrl', function($scope, getCommunesService){
             case 50:   return estilo;
             case 51:   return estilo;
             case 52:   return estilo;
+            case 53:   return estilo;
           }
         },
         onEachFeature: onEachFeature
