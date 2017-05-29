@@ -9,52 +9,42 @@
         <link rel="stylesheet" type="text/css" href='./styles/mapbox-gl.css'>
     </head>
     <body ng-app="burritaco">
-      <nav class="navbar navbar-default navbar-default-burritaco">
-        <div class="container-fluid">
+      <nav class="navbar navbar-default navbar-default-burritaco" >
+        <div class="container-fluid" >
           <div class="navbar-header">
             <button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-          <a  class="navbar-brand text-brand-nav" href="#/home">
-            <img class="logo"src="resources/img/burritaco.png" width="60px" height="60px"></img>
+          <a  class="navbar-brand" href="#/home">
+            <img class="logo"src="resources/img/burritaco.png" ></img>
           </a>
           </div>
 
-          <!--Estoy trabajando en esta parte para que al tener una pantalla pequeña
-          No se colapse con el contenido, si no resulta, la opción sería poner
-          un link directo a la vista del gráfico sin pasar por este dropbox,
-          ya que es la unica funcionalidad que tenemos para este sprint
-        -->
-          <div class="collapse navbar-collapse" id="myNavbar" >
-          <ul class="nav navbar-nav">
-            <li  ><a class="text-links-nav" href="#/home">Inicio</a></li>
+          <div class="collapse navbar-collapse" id="myNavbar" style="background:white; border-color:#c0deed">
+          <ul class="nav navbar-nav ">
+              <li class="active"><a href="#/home">Inicio <span class="sr-only">(current)</span></a></li>
             <li class="dropdown" >
-              <a class="dropdown-toggle text-links-nav" data-toggle="dropdown" href="#">Congestión
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-burritaco dropdown-content dropdown-content-burritaco" >
-                <li><a class="text-links-nav-drop" href="#/graphic">Evolución temporal</a></li>
-                <hr style="border-color:#1dcaff;">
-                <li><a class="text-links-nav-drop " href="#/graph">Relación persona-comuna</a></li>
-                <hr style="border-color:#1dcaff;">
-                <li><a class="text-links-nav-drop" href="#/map">Mapa por comuna</a></li>
-                <hr style="border-color:#1dcaff;">
-                <li><a class="text-links-nav-drop" href="#/tweets">Tweets relacionados</a></li>
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Congestión <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#/graphic">Reportes según hora de congestión</a></li>
+                <li><a href="#/graphiccompare">Comparación de congestión</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#/graph">Red de congestión</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#/map">Mapa de congestión</a></li>
               </ul>
             </li>
-            <ul class="nav navbar-nav">
-              <!--
-              <li  ><a class="text-links-nav" href="#/home">Inicio</a></li>
-              <li><a class="text-links-nav" href="#/graphic">Congestión relación temporal</a></li>
-              -->
-              <li><a class="text-links-nav" href="#/us">Nosotros</a></li>
-              <li><a class="text-links-nav" href="#/about">Acerca de</a></li>
-            </ul>
-          </div>
-          </div>
-        </nav>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#/us">Nosotros</a></li>
+            <li><a href="#/about">Acerca de</a></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+
 
         <div class="container-fluid">
             <div ng-view="" class="ng-scope"></div>

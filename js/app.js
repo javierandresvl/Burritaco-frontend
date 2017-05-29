@@ -32,7 +32,8 @@ app.config(function($routeProvider){
       templateUrl: 'views/tweets.html',
       controller: 'TweetsCtrl'
     })
-    .otherwise({
-        redirectTo: '/home'
-      });
+    .when('/graphiccompare',{
+      templateUrl:'views/graphiccompare.html',
+      controller: 'GraphicCompareCtrl'
+    });
 });

@@ -99,8 +99,7 @@ app.controller('MapCtrl', function($scope, getCommunesService){
 
   function initMap(){
     return map = L.map('mapid',{
-        minZoom:9,
-        zoom: 9,
+        zoom: 8,
         center: [-33.6050, -70.64]
     });
   }
@@ -111,7 +110,7 @@ app.controller('MapCtrl', function($scope, getCommunesService){
     {
       attribution: '© Mapbox | @ Futuchi ',
       access_token:accesstoken,
-      minZoom: 9,
+      minZoom: 8,
     }).addTo($scope.map);
   }
 
