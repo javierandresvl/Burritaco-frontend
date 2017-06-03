@@ -119,19 +119,6 @@ app.controller('MapCtrl', function($scope, getCommunesService){
   }
 
   function onEachFeature(feature, layer) {
-    // does this feature have a property named popupContent?
-    /*
-    if (feature.properties && feature.properties.NOM_COM && feature.properties.NOM_PROV) {
-        layer.bindPopup().setPopupContent('<strong>Comuna: </strong>'+ feature.properties.NOM_COM +
-        '<br><strong>Provincia: </strong>'+ feature.properties.NOM_PROV);
-          layer.on('mouseover',function(e){
-            this.openPopup();
-          });
-          layer.on('mouseout',function(e){
-            this.closePopup();
-          });
-    }
-    */
     layer.on({
         mouseover: highlightFeature,
         mouseout: resetHighlight,
@@ -140,7 +127,7 @@ app.controller('MapCtrl', function($scope, getCommunesService){
   }
 
   function getMapData(){
-    getCommunesService.getChoroplethData()
+    getCommunesService.getAllCongestions()
     .success(function(data){
       $scope.mapData = data;
       /*

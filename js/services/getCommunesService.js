@@ -12,8 +12,18 @@ app.service('getCommunesService', function($http){
             return $http.get(url);
         };
 
-        this.getChoroplethData = function(){
+        this.getAllCongestions = function(){
           url = urlBase+'congestions/communes';
           return $http.get(url);
         };
+        
+        this.createNodes = function(){
+          url= urlBase+'communes/create/nodes';
+          return $http.get(url);
+        }
+
+        this.getNeo4jGraph = function(){
+          url = urlBase+'neo4j/nodes';
+          return $http.get(url,{headers : {'Content-Type' : 'application/json; charset=UTF-8'}});
+        }
 });

@@ -6,6 +6,13 @@ body {
   min-width: 425px;
   min-height: 530px;
 }
+
+#containerGrafo {
+  max-width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
 .fecha-datos{
   color:grey;
   opacity: 50;

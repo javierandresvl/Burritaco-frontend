@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "id": "Independencia",
+      "label": "A node",
+      "size": 3,
+      "type": "Person"
+    },
+    {
+      "id": "Alejandro",
+      "label": "Another node",
+      "size": 2,
+      "type": "Person"
+    },
+    {
+      "id": "Planta",
+      "label": "And a last one",
+      "size": 1,
+      "type": "Person"
+    },
+    {
+      "id": "Santiago",
+      "label": "And a last one",
+      "size": 1,
+      "type": "Commune"
+    },
+    {
+      "id": "Quilicura",
+      "label": "And a last one",
+      "size": 1,
+      "type": "Commune"
+    },
+    {
+      "id": "Planta",
+      "label": "And a last one",
+      "size": 1,
+      "type": "Person"
+    },
+    {
+      "id": "Planta",
+      "label": "And a last one",
+      "size": 1,
+      "type": "Person"
+    },
+    {
+      "id": "Planta",
+      "label": "And a last one",
+      "size": 1,
+      "type": "Person"
+    },
+    {
+      "id": "Planta",
+      "label": "And a last one",
+      "size": 1,
+      "type": "Person"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1"
+    },
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n2"
+    },
+    {
+      "id": "e2",
+      "source": "n2",
+      "target": "n0"
+    }
+  ]
+}
