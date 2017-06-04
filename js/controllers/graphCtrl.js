@@ -9,7 +9,7 @@ app.controller('GraphCtrl',function($scope,getCommunesService){
        sigma.classes.graph.addMethod('neighbors', function(nodeId) {
          var k,
              neighbors = {},
-             index = this.outNeighborsIndex[nodeId] || {};
+             index = this.allNeighborsIndex[nodeId] || {};
 
          for (k in index)
            neighbors[k] = this.nodesIndex[k];
@@ -78,9 +78,8 @@ app.controller('GraphCtrl',function($scope,getCommunesService){
             edgeLabelHoverShadowColor: '#000',
 
             // Captors
-
-            zoomMin: 0.001,
-            zoomMax: 300
+            zoomMin: 0.07,
+            zoomMax: 2
           }
         }, function(s) {
           //IMPORTANTE: aqui se obtiene la data y se carga al grafo de
