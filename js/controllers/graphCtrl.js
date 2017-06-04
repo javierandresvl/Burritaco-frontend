@@ -35,7 +35,7 @@ app.controller('GraphCtrl',function($scope,getCommunesService){
             singleHover: true,
 
             // Node label
-            drawLabels: false,
+            drawLabels: true,
             labelThreshold: 10,
             labelColor: "default",
             labelHoverShadow: "default",
@@ -44,7 +44,7 @@ app.controller('GraphCtrl',function($scope,getCommunesService){
             labelHoverColor: "default",
             defaultHoverLabelBGColor: "#002147",
             defaultLabelHoverColor: "#fff",
-            defaultLabelColor: "#fff",
+            defaultLabelColor: "#000",
             defaultLabelSize: 14,
             defaultLabelBGColor: "#c0deed",
 
