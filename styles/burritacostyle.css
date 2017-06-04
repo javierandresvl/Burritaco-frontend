@@ -7,11 +7,11 @@ body {
   min-height: 530px;
 }
 
-#containerGrafo {
-  max-width: 400px;
-  height: 400px;
-  margin: auto;
+#graph-container{
+  background-color: white;
 }
+
+
 
 .fecha-datos{
   color:grey;
@@ -137,6 +137,7 @@ li:active{
 .container-fluid{
   min-width: 425px;
   min-height: 530px;
+  padding: 0 !important;
 }
 
 .content{
