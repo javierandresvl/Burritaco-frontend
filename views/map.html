@@ -1,3 +1,8 @@
-<div class="alert alert-info">
-  <strong>Esta página no se encuentra implementada aún</strong>
+<div class="container-fluid leaflet-container">
+  <div class="container-fluid leaflet-container" id="mapid">
+    <div class="leaflet-control info" id="info"></div>
+    <div class="leaflet-control info legend" id="legend"></div>
+  </div>
+  <p class="fecha-datos" id="recop" ng-bind="recopilation"></p>
+  <button class="btn btn-default" style="align: left;" ng-click="volarA();">Haga click para centrar mapa</button>
 </div>
