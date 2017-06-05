@@ -5,16 +5,16 @@ var app = angular.module('burritaco', [
 app.config(function($routeProvider){
     $routeProvider
     .when('/home', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
+      templateUrl: 'views/main.html',
+      controller: 'MainCtrl'
+    })
     .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
+      templateUrl: 'views/about.html',
+      controller: 'AboutCtrl'
+    })
     .when('/us', {
-            templateUrl:'views/us.html',
-            controller:'UsCtrl'
+      templateUrl:'views/us.html',
+      controller:'UsCtrl'
     })
     .when('/graphic',{
       templateUrl: 'views/graphic.html',
@@ -34,6 +34,6 @@ app.config(function($routeProvider){
     })
     .when('/graphiccompare',{
       templateUrl:'views/graphiccompare.html',
-      controller: 'GraphicCompareCtrl'
+      controller: 'GraphiccompareCtrl'
     });
 });

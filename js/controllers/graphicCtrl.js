@@ -108,7 +108,7 @@ app.controller('GraphicCtrl',function($scope, getCommunesService){
       display:true,
       text:"Reportes de congestión durante el día en: ",
       fontSize: 20,
-      fontFamily: "Montserrat",
+      fontFamily: "Arial",
       fontColor: "black",
     },
     scales: {

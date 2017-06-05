@@ -5,8 +5,6 @@ app.service('getCommunesService', function($http){
             return $http.get(url);
         };
 
-
-
         this.getCongestionData = function(id){
             url = urlBase+'congestions/'+id;
             return $http.get(url);
