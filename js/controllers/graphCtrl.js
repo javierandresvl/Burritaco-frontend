@@ -79,7 +79,7 @@ app.controller('GraphCtrl',function($scope,getCommunesService){
 
             // Captors
             zoomMin: 0.07,
-            zoomMax: 2
+            zoomMax: 1
           }
         }, function(s) {
           //IMPORTANTE: aqui se obtiene la data y se carga al grafo de
@@ -95,16 +95,19 @@ app.controller('GraphCtrl',function($scope,getCommunesService){
               node.x = Math.random();
               node.y = Math.random();
               node.color = "#1dcaff";
+	      node.originalLabel= "@"+node.label
               node.label = "@"+node.label;
               //Para agregar peso al label
               //node.label += " | Weight: " + node.weight;
             }else if(node.type == "Commune"){
-              node.originalColor = node.color;
+              
               // node.x = Math.cos(Math.PI * 3 );
               // node.y = Math.sin(Math.PI * 3 );
               node.x = Math.random();
               node.y = Math.random();
               node.color = "orange";
+	      node.originalLabel = node.label;
+              node.originalColor = node.color;
             }
           });
           s = s.refresh();
@@ -124,9 +127,9 @@ app.controller('GraphCtrl',function($scope,getCommunesService){
           /*noverlap
           */
           var config = {
-            nodeMargin: 5.0,
+            nodeMargin: 1.0,
             scaleNodes: 1.3,
-            speed: 11
+            speed: 5
           };
 
 
@@ -175,18 +178,29 @@ app.controller('GraphCtrl',function($scope,getCommunesService){
 
 
         s.graph.nodes().forEach(function(n) {
-          if (toKeep[n.id])
+          if (toKeep[n.id]){
             n.color = n.originalColor;
-          else
+            n.label = n.originalLabel;
+	    n.hidden = false;}
+	   
+	    
+          else{
+            n.hidden = true;
             n.color = 'white';
+	    n.label = "";}
+            
+	    
         });
 
+ 	
 
         s.graph.edges().forEach(function(e) {
           if (toKeep[e.source] && toKeep[e.target])
-            e.color = e.originalColor;
+            e.hidden= false;
           else
-            e.color = 'white';
+            e.hidden = true;
+	    
+	    
         });
 
         // Since the data has been modified, we need to
@@ -199,14 +213,18 @@ app.controller('GraphCtrl',function($scope,getCommunesService){
         s.bind('clickStage', function(e) {
             s.graph.nodes().forEach(function(n) {
               if(n.type == "person"){
+		n.label=n.originalLabel;
                 n.color = "#1dcaff";
+		n.hidden = false;
               }else if(n.type == "Commune"){
                 n.color = "orange";
+		n.label=n.originalLabel;
+		n.hidden = false;
               }
             });
 
             s.graph.edges().forEach(function(e) {
-              e.color = e.originalColor;
+              e.hidden= false;
             });
 
             // Same as in the previous event:

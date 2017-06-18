@@ -1,5 +1,5 @@
 app.service('getCommunesService', function($http){
-        var urlBase = 'http://localhost:8080/Burritaco-backend/';
+        var urlBase = 'http://107.170.14.114:8080/Burritaco-backend/';
         this.getCommunes = function(){
             url = urlBase + 'communes';
             return $http.get(url);

@@ -82,7 +82,7 @@ app.controller('GraphicCtrl',function($scope, getCommunesService){
           case "20:00": $scope.dataGraph[20]=data[key];
           case "21:00": $scope.dataGraph[21]=data[key];
           case "22:00": $scope.dataGraph[22]=data[key];
-          case "23:00": $scope.dataGraph[24]=data[key];
+          case "23:00": $scope.dataGraph[23]=data[key];
           case "fecha inicial": $scope.fechaInicio=data[key];
           case "fecha termino": $scope.fechaFinal=data[key];
         }
