@@ -1,7 +1,9 @@
-app.controller('GraphicCtrl',function($scope, getCommunesService){
+app.controller('GraphicCtrl',function($scope, $routeParams,getCommunesService){
   $scope.communes = [];
   $scope.dataGraph = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-  $scope.selectedCommune = 0;
+  $scope.selectedCommune = null;
+  $scope.selectedComID= $routeParams.param1;
+  $scope.selectedComName= $routeParams.param2;
   $scope.fechaInicio=null;
   $scope.fechaFinal=null;
 
@@ -26,10 +28,20 @@ app.controller('GraphicCtrl',function($scope, getCommunesService){
   function getDataCongestionCommune(id){
     getCommunesService.getCongestionData(id)
     .success(function(data){
+      var texto=null;
+      if ($scope.selectedCommune == null){
+        if($scope.selectedComID != null){
+          //En este caso se cargan los datos por los parametros de la url
+          texto = "Detalle de reportes de congestión durante el día en: "+ $scope.selectedComName;
+        }
+      }else{
+        //En este caso se cargan los datos a traves de la seleccion
+        texto = "Detalle de reportes de congestión durante el día en: "+$scope.selectedCommune.communeName;
+      }
       $scope.options={
         title:{
           display:true,
-          text:"Detalle de reportes de congestión durante el día en: "+$scope.selectedCommune.communeName,
+          text:texto,
           fontSize: 20,
           fontFamily: "Arial",
           fontColor: "black",
@@ -90,13 +102,28 @@ app.controller('GraphicCtrl',function($scope, getCommunesService){
       $scope.recopilation="Datos correspondientes al período entre: "+$scope.fechaInicio+" hasta "+$scope.fechaFinal;
     })
     .error(function(error){
-      $scope.status = 'Error al obtener los datos del gráfico para la comuna ' + $scope.selectedCommune.communeName;
+      var texto=null;
+      if ($scope.selectedCommune == null){
+        if($scope.selectedComID != null){
+          //En este caso se cargan los datos por los parametros de la url
+          $scope.status = 'Error al obtener los datos del gráfico para la comuna ' + $scope.selectedComName;
+        }
+      }else{
+        //En este caso se cargan los datos a traves de la seleccion
+        $scope.status = 'Error al obtener los datos del gráfico para la comuna ' + $scope.selectedCommune.communeName;
+      }
     });
   }
 
   $scope.$watch("selectedCommune", function(){
-      console.log($scope.selectedCommune.communeId);
-      getDataCongestionCommune($scope.selectedCommune.communeId);
+      if ($scope.selectedCommune == null){
+        if($scope.selectedComID != null){
+          getDataCongestionCommune($scope.selectedComID);
+        }
+      }else{
+        getDataCongestionCommune($scope.selectedCommune.communeId);
+      }
+
   }, true);
 
   $scope.labels = ["00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00",

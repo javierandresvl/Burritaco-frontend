@@ -20,6 +20,10 @@ app.config(function($routeProvider){
       templateUrl: 'views/graphic.html',
       controller: 'GraphicCtrl'
     })
+    .when('/graphic/:param1/:param2',{
+      templateUrl: 'views/graphic.html',
+      controller: 'GraphicCtrl'
+    })
     .when('/graph',{
       templateUrl: 'views/graph.html',
       controller: 'GraphCtrl'

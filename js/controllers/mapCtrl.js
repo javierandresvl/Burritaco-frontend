@@ -1,4 +1,4 @@
-app.controller('MapCtrl', function($scope, getCommunesService){
+app.controller('MapCtrl', function($scope, getCommunesService, $http){
   var myaccesstoken = 'pk.eyJ1IjoicGFzdG9yZHJvZ28iLCJhIjoiY2ozMTRqNWtuMDAwNTJxbHNrdDNzaXBzaiJ9.yQPnbO88iRmQywPV-JKFXg';
   $scope.mapData = [];
   $scope.map = [];
@@ -23,6 +23,7 @@ app.controller('MapCtrl', function($scope, getCommunesService){
   Listeners para eventos
   */
   function highlightFeature(e) {
+
     var layer = e.target;
 
     layer.setStyle({
@@ -45,6 +46,12 @@ app.controller('MapCtrl', function($scope, getCommunesService){
 
   function zoomToFeature(e) {
     $scope.map.fitBounds(e.target.getBounds());
+  }
+
+
+  $scope.goToGraphic = function (e) {
+    var layer = e.target;
+    window.location.href = '#/graphic/'+layer.feature.properties.COD_COMUNA +'/'+layer.feature.properties.NOM_COM;
   }
 
   function getColor(d) {
@@ -88,7 +95,7 @@ app.controller('MapCtrl', function($scope, getCommunesService){
       // method that we will use to update the control based on feature properties passed
       $scope.info.update = function (props) {
         this._div.innerHTML = '<h4>Reportes de congestión</h4>' +  (props ?
-          '<b>' + props.NOM_COM + '</b><br />Provincia: '+props.NOM_PROV+'<br /> ' + $scope.mapData[String(props.COD_COMUNA)] + ' reportes'
+          '<b>' + props.NOM_COM + '</b><br />Provincia: '+props.NOM_PROV+'<br /> ' + $scope.mapData[String(props.COD_COMUNA)] + ' reportes'+'<br /><strong style="opacity:0.5;">Haz click para acercarte a la comuna</strong><br /><strong style="opacity:0.5;">Haz doble click para ir al gráfico</strong>'
           : 'Pasa el mouse sobre alguna comuna');
       };
   }
@@ -122,7 +129,8 @@ app.controller('MapCtrl', function($scope, getCommunesService){
     layer.on({
         mouseover: highlightFeature,
         mouseout: resetHighlight,
-        click: zoomToFeature
+        click: zoomToFeature,
+        dblclick : $scope.goToGraphic
     });
   }
 
